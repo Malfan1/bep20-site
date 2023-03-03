@@ -4,4 +4,22 @@ $prefix: artem- !default;
 $fontFamilyInter: 'Inter', sans-serif;
 $fontFamilyPoppins: 'Poppins', sans-serif;
 
-$path: '../images/'
+$path: '../images/';
+
+$blue: #0d66ff !default;
+$indigo: #6611f2 !default;
+$red: #dc3333 !default;
+
+$colors: (
+    "blue": $blue,
+    "indigo": $indigo,
+    "red": $red,
+)!default;
+
+:root{
+    --#{$prefix}font-family: #{$fontFamilyInter};
+}
+
+body{
+    font-family: var(--#{$prefix}font-family);
+}

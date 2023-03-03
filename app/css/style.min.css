@@ -1,1 +1,1 @@
-@import"https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap"
+@import"https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap";:root{--artem-font-family: Inter, sans-serif}body{font-family:var(--artem-font-family)}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::after,*::before{padding:0;margin:0;-webkit-box-sizing:initial;box-sizing:initial}
