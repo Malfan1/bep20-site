@@ -1,5 +1,12 @@
 html{
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
 }
 
 *,
@@ -8,4 +15,8 @@ html{
     padding: 0;
     margin: 0;
     box-sizing: initial;
+}
+
+a{
+    text-decoration: none;
 }

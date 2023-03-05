@@ -6,20 +6,19 @@ $fontFamilyPoppins: 'Poppins', sans-serif;
 
 $path: '../images/';
 
-$blue: #0d66ff !default;
-$indigo: #6611f2 !default;
-$red: #dc3333 !default;
+$bgColor: #1E252B;
+$colorTitle: #F9F9F9;
+$colorLinkOnBtn: #F9F9F9;
+$colorOnBtnWatch: #F9F9F9;
+$colorSubTitle: #ADB0B6;
+$bgColorButton: #F7A501;
+
 
 $colors: (
-    "blue": $blue,
-    "indigo": $indigo,
-    "red": $red,
+    "bgColor": $bgColor,
+    "colorTitle": $colorTitle,
+    "colorSubTitle": $colorSubTitle,
+    "bgColorButton": $bgColorButton,
+    "colorLinkOnBtn": $colorLinkOnBtn,
+    "colorOnBtnWatch": $colorOnBtnWatch,
 )!default;
-
-:root{
-    --#{$prefix}font-family: #{$fontFamilyInter};
-}
-
-body{
-    font-family: var(--#{$prefix}font-family);
-}

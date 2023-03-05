@@ -1,0 +1,9 @@
+:root{
+    --#{$prefix}font-family: #{$fontFamilyInter};
+    --#{$prefix}font-family-title: #{$fontFamilyPoppins};
+    --#{$prefix}bg-color: #{$bgColor};
+    // --#{$prefix}color-title: #($colorTitle); 
+    --#{$prefix}sub-color: #{$colorSubTitle};
+    --#{$prefix}bg-color-btn: #{$bgColorButton};
+    --#{$prefix}color-link-on-btn: #{$colorLinkOnBtn};
+}

@@ -1,0 +1,7 @@
+*{
+    font-family: var(--#{$prefix}font-family);
+}
+
+.bg{
+    background: var(--#{$prefix}bg-color);
+}

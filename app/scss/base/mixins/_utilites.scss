@@ -1,0 +1,5 @@
+@mixin btnStyleMain(){
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--#{$prefix}color-link-on-btn);
+}
