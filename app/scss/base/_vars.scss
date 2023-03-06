@@ -13,9 +13,11 @@ $colorLinkOnBtn: #F9F9F9;
 $colorOnBtnBorder: #F9F9F9;
 $colorSubTitle: #ADB0B6;
 $bgColorButton: #F7A501;
+$colorSpan: #F7A501;
 $bgColorWhoBox: #2C353D;
 $colorWordsWhoBox: #ADB0B6;
 $colorLine: #748FB5;
+$colorWords: #ADB0B6;
 
 
 $colors: (
@@ -29,4 +31,6 @@ $colors: (
     "bgColorWhoBox": $bgColorWhoBox,
     "colorWordsWhoBox": $colorWordsWhoBox,
     "colorLine": $colorLine,
+    "colorSpan": $colorSpan, 
+    "colorWords": $colorWords,
 )!default;

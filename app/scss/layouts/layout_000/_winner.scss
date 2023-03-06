@@ -1,0 +1,35 @@
+.winner {
+    padding: 0 32px;
+    margin-bottom: 62px;
+    &__title{
+        font-family: var(--#{$prefix}font-family-title);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--#{$prefix}color-title);
+        margin-bottom: 24px;
+
+        &_orange{
+            color: var(--#{$prefix}color-span);
+        }
+    }
+
+    &__p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--#{$prefix}color-words);
+    }
+
+    &__svg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bit{
+        width: 300px;
+        height: 300px;
+    }
+}

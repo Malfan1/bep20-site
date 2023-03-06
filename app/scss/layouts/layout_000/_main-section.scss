@@ -17,13 +17,16 @@
         font-family: var(--#{$prefix}font-family-title);
         font-size: 44px;
         line-height: 64px;
-        color: $colorTitle;
+        color: var(--#{$prefix}color-title);
         padding: 0 32px 0;
         margin-bottom: 20px;
     }
 
     &__wallet{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__svg{

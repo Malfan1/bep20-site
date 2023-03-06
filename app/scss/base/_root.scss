@@ -2,7 +2,7 @@
     --#{$prefix}font-family: #{$fontFamilyInter};
     --#{$prefix}font-family-title: #{$fontFamilyPoppins};
     --#{$prefix}bg-color: #{$bgColor};
-    // --#{$prefix}color-title: #($colorTitle); 
+    --#{$prefix}color-title: #{$colorTitle}; 
     --#{$prefix}sub-color: #{$colorSubTitle};
     --#{$prefix}bg-color-btn: #{$bgColorButton};
     --#{$prefix}color-link-on-btn: #{$colorLinkOnBtn};
@@ -10,5 +10,6 @@
     --#{$prefix}white: #{$white};
     --#{$prefix}color-words-who: #{$colorWordsWhoBox};
     --#{$prefix}color-line: #{$colorLine};
-
+    --#{$prefix}color-span: #{$colorSpan};
+    --#{$prefix}color-words: #{$colorWords};
 }
