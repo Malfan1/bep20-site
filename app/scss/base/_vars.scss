@@ -6,6 +6,7 @@ $fontFamilyPoppins: 'Poppins', sans-serif;
 
 $path: '../images/';
 
+$white: #FFF;
 $bgColor: #1E252B;
 $colorTitle: #F9F9F9;
 $colorLinkOnBtn: #F9F9F9;
@@ -13,9 +14,12 @@ $colorOnBtnBorder: #F9F9F9;
 $colorSubTitle: #ADB0B6;
 $bgColorButton: #F7A501;
 $bgColorWhoBox: #2C353D;
+$colorWordsWhoBox: #ADB0B6;
+$colorLine: #748FB5;
 
 
 $colors: (
+    "white": $white,
     "bgColor": $bgColor,
     "colorTitle": $colorTitle,
     "colorSubTitle": $colorSubTitle,
@@ -23,4 +27,6 @@ $colors: (
     "colorLinkOnBtn": $colorLinkOnBtn,
     "colorOnBtnBorder": $colorOnBtnBorder,
     "bgColorWhoBox": $bgColorWhoBox,
+    "colorWordsWhoBox": $colorWordsWhoBox,
+    "colorLine": $colorLine,
 )!default;
