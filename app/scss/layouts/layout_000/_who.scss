@@ -1,0 +1,15 @@
+.who {
+    background: var(--#{$prefix}bg-color-who);
+    &-box{
+       &__btn{
+        padding: 16px 22px;
+        background: transparent;
+        border-radius: 16px;
+        border: 1px solid $colorOnBtnBorder;
+       }
+
+       &__link{
+        color: var(--#{$prefix}color-link-on-btn);
+       }
+    }
+}

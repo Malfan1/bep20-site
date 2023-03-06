@@ -9,9 +9,10 @@ $path: '../images/';
 $bgColor: #1E252B;
 $colorTitle: #F9F9F9;
 $colorLinkOnBtn: #F9F9F9;
-$colorOnBtnWatch: #F9F9F9;
+$colorOnBtnBorder: #F9F9F9;
 $colorSubTitle: #ADB0B6;
 $bgColorButton: #F7A501;
+$bgColorWhoBox: #2C353D;
 
 
 $colors: (
@@ -20,5 +21,6 @@ $colors: (
     "colorSubTitle": $colorSubTitle,
     "bgColorButton": $bgColorButton,
     "colorLinkOnBtn": $colorLinkOnBtn,
-    "colorOnBtnWatch": $colorOnBtnWatch,
+    "colorOnBtnBorder": $colorOnBtnBorder,
+    "bgColorWhoBox": $bgColorWhoBox,
 )!default;

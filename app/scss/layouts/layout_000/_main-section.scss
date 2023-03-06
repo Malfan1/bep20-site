@@ -33,6 +33,7 @@
 
 .sub-title{
     margin-bottom: 32px;
+
     &__p{
         font-size: 14px;
         line-height: 24px;
@@ -55,9 +56,10 @@
 
 .main-section__btn-watch{
     padding: 16px 24px 16px 42px;
-    border: 1px solid $colorOnBtnWatch;
+    border: 1px solid $colorOnBtnBorder;
     border-radius: 16px;
     background: transparent;
+    margin-bottom: 10px;
 
     &__link{
         @include btnStyleMain;
