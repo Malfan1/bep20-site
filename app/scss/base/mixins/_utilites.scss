@@ -3,3 +3,28 @@
     font-size: 16px;
     color: var(--#{$prefix}color-link-on-btn);
 }
+
+@mixin baseTitleStyle(){
+    font-family: var(--#{$prefix}font-family-title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: var(--#{$prefix}color-title);
+    @content;
+}
+
+@mixin subStyle($fw, $fz, $lh){
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: var(--#{$prefix}color-title);
+    @content;
+}
+
+@mixin wordsStyle($fw, $fz, $lh){
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: var(--#{$prefix}color-words);
+    @content;
+}

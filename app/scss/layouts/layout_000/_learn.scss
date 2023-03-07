@@ -1,0 +1,16 @@
+.learn{
+    &__title{
+        @include baseTitleStyle();
+        margin-bottom: 20px;
+    }
+
+    &__sub{
+        @include subStyle(600, 16px, 28px);
+        margin-bottom: 16px;
+    }
+
+    &__words{
+        @include wordsStyle(500, 14px, 24px);
+        margin-bottom: 12px;
+    }
+}

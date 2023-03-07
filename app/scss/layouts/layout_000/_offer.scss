@@ -1,0 +1,36 @@
+.offer{
+    background: var(--#{$prefix}bg-color-offer);
+    padding: 60px 28px;
+    &__title{
+        @include baseTitleStyle();
+        margin-bottom: 24px;
+    }
+
+    &__sub{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--#{$prefix}color-words);
+        margin-bottom: 32px;
+    }
+
+    &__flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--#{$prefix}bg-color-offer-card);
+        width: 100%;
+        height: 240px; 
+        border-radius: 20px;
+        margin-bottom: 16px;
+
+        &:last-child{
+            margin-bottom: 36px;
+        }
+    }
+}

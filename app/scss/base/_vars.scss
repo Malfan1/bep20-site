@@ -18,6 +18,8 @@ $bgColorWhoBox: #2C353D;
 $colorWordsWhoBox: #ADB0B6;
 $colorLine: #748FB5;
 $colorWords: #ADB0B6;
+$bgColorOffer: rgba(40, 48, 54, 0.3);
+$bgColorOfferCard: #1E252B;
 
 
 $colors: (
@@ -33,4 +35,6 @@ $colors: (
     "colorLine": $colorLine,
     "colorSpan": $colorSpan, 
     "colorWords": $colorWords,
+    "bgColorOffer": $bgColorOffer,
+    "bgColorOfferCard": $bgColorOfferCard,
 )!default;
