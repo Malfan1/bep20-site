@@ -1,4 +1,5 @@
 .learn{
+    padding: 48px 12px;
     &__title{
         @include baseTitleStyle();
         margin-bottom: 20px;
@@ -12,5 +13,59 @@
     &__words{
         @include wordsStyle(500, 14px, 24px);
         margin-bottom: 12px;
+
+        &:last-of-type{
+            margin-bottom: 32px;
+        }
+    }
+
+    &__foto{
+        position: relative;
+        margin-top: 32px;
+        margin-bottom: 82px;
+    }
+
+    &__gradient{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        top: 0;
+        left: -20px;
+        background: linear-gradient(135.15deg, #ad79e0 1.17%, #de74c0 31.88%, #6c72dc 65.46%);
+        mix-blend-mode: overlay;
+        opacity: 0.6;
+        filter: blur(139.13px);
+    }
+
+    &__svg{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__gradient-inside{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+        mix-blend-mode: overlay;
+        filter: blur(48.9484px);
+    }
+
+    &__gamepad{
+        width: 70%;
+        height: 70%;
+    }
+
+    &__bg{
+        width: 100%;
+        height: 100%;
+
+        &__foto{
+            
+        }
     }
 }
