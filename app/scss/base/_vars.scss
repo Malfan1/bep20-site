@@ -14,6 +14,7 @@ $colorOnBtnBorder: #F9F9F9;
 $colorSubTitle: #ADB0B6;
 $bgColorButton: #F7A501;
 $colorSpan: #F7A501;
+$bgColorDanger:  rgba(247, 165, 1, 0.05);
 $bgColorBox: #2C353D;
 $colorWordsWhoBox: #ADB0B6;
 $colorLine: #748FB5;
@@ -37,4 +38,5 @@ $colors: (
     "colorWords": $colorWords,
     "bgColorOffer": $bgColorOffer,
     "bgColorOfferCard": $bgColorOfferCard,
+    "bgColorDanger": $bgColorDanger,
 )!default;

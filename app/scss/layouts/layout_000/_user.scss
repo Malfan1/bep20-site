@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 32px 48px;
+    padding: 60px 27px 48px;
     background: var(--#{$prefix}bg-color-offer);
     text-align: center;
 
@@ -26,6 +26,10 @@
         background: var(--#{$prefix}bg-color);
         border-radius: 20px;
         margin-bottom: 64px;
+
+        &:nth-child(3){
+            margin-bottom: 24px;
+        }
     }
 
     &__foto{
@@ -47,5 +51,23 @@
         line-height: 24px;
         color: var(--#{$prefix}white);
         padding: 120px 30px 62px;
+    }
+
+    &__yellow-box{
+        background: var(--#{$prefix}bg-color-danger);
+        border: 1px solid $colorSpan;
+        border-radius: 10px;
+    }
+
+    &__danger{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--#{$prefix}white);
+        padding: 40px 30px;
+
+        &_yellow{
+            color: var(--#{$prefix}color-span);
+        }
     }
 }
