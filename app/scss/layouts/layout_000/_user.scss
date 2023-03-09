@@ -1,0 +1,51 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 32px 48px;
+    background: var(--#{$prefix}bg-color-offer);
+    text-align: center;
+
+    &__title{
+        @include titleStyle(700, 36px, 48px);
+        margin-bottom: 20px;
+    }
+    
+    &__words{
+        @include wordsStyle(500, 14px, 24px);
+        margin-bottom: 72px;
+    }
+
+    &__wrapper{
+        width: 100%;
+    }
+
+    &__box{
+        position: relative;
+        background: var(--#{$prefix}bg-color);
+        border-radius: 20px;
+        margin-bottom: 64px;
+    }
+
+    &__foto{
+        position: absolute;
+        display: inline-block;
+        top: -40px;
+        left: 50%;
+    }
+    
+    &__svg{
+        transform: translateX(-50%);
+
+    }
+
+    &__p{
+        font-family: var(--#{$prefix}font-family-title);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--#{$prefix}white);
+        padding: 120px 30px 62px;
+    }
+}
