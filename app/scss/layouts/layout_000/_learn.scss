@@ -13,10 +13,6 @@
     &__words{
         @include wordsStyle(500, 14px, 24px);
         margin-bottom: 12px;
-
-        &:last-of-type{
-            margin-bottom: 32px;
-        }
     }
 
     &__foto{
@@ -54,4 +50,69 @@
         mix-blend-mode: overlay;
         filter: blur(48.9484px);
     }
+
+    &__gamepad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    &__title-h3{
+        @include styleH3(600, 18px, 27px);
+    }
+
+    &__wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__card{
+        padding: 30px 30px 47px;
+        background: var(--#{$prefix}bg-color-b);
+        border-radius: 20px;
+        margin-bottom: 16px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        & > p{
+            margin-bottom: 0;
+        }
+    }
+
+    &__gradient-top{
+        position: absolute;
+        width: 508px;
+        height: 508px;
+        background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+        mix-blend-mode: overlay;
+        opacity: 0.6;
+        filter: blur(139.13px);
+        top: 0;
+        left: 0;
+    }
+
+    &__gradient-bottom{
+        position: absolute;
+        width: 389px;
+        height: 389px;
+        background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+        mix-blend-mode: overlay;
+        filter: blur(100px);
+        bottom: 0;
+        left: 0px;
+    }
+}
+
+.m32px16px{
+    margin: 0 32px 24px;
+}
+
+.m16px{
+    margin-bottom: 16px;
 }

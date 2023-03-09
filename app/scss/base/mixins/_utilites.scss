@@ -28,3 +28,11 @@
     color: var(--#{$prefix}color-words);
     @content;
 }
+
+@mixin styleH3($fw, $fz, $lh){
+        font-family: var(--#{$prefix}font-family-title);
+        font-weight: $fw;
+        font-size: $fz;
+        line-height: $lh;
+        color: var(--#{$prefix}color-title);
+}
