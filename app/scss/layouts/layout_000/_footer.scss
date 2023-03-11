@@ -1,0 +1,32 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo{
+        margin-bottom: 24px;
+    }
+
+    &__icons{
+        display: flex;
+    }
+
+    &__icon{
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        background: var(--#{$prefix}bg-icons);
+        border-radius: 5px;
+
+        &:last-of-type{
+            margin-right: 0px;
+        }
+    }
+
+    &__icon-i{
+        
+    }
+}

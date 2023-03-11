@@ -1,0 +1,47 @@
+.know{
+    position: relative;
+    max-width: 100%;
+    background: var(--#{$prefix}bg-color-b);
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 15px;
+    overflow: hidden;
+    margin: 0 12px 48px;
+
+    &__title{
+        @include titleStyle(700, 24px, 36px);
+        margin-bottom: 16px;
+    } 
+    
+    &__words{
+        @include wordsStyle(500, 14px, 16px);
+        margin-bottom: 32px;
+    }
+
+    &__btn{
+        border-radius: 16px;
+        border: 0;
+
+    }
+
+    &__link{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        color: var(--#{$prefix}color-words-1e);
+        padding: 25px 40px;
+    }
+
+    &__gradient{
+        position: absolute;
+        bottom: 0;
+        transform: translate(55%, 55%);
+        right: 0;
+        width: 389px;
+        height: 389px;
+        background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+        mix-blend-mode: overlay;
+        filter: blur(80px);
+    }
+}

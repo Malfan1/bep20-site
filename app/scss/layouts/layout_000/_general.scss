@@ -5,3 +5,20 @@
 .bg{
     background: var(--#{$prefix}bg-color);
 }
+
+
+.main{
+    position: relative;
+    margin-bottom: 80px;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: calc(100% - 32px);
+        height: 1px;
+        background: var(--#{$prefix}white);
+        opacity: .1;
+        margin: 0 16px;
+        display: block;
+    }
+}

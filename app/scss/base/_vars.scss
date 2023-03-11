@@ -21,6 +21,9 @@ $colorLine: #748FB5;
 $colorWords: #ADB0B6;
 $bgColorOffer: rgba(40, 48, 54, 0.3);
 $bgColorOfferCard: #1E252B;
+$colorWords1e: #1E252B;
+$bgIcons: rgba(242, 242, 242, .1);
+
 
 
 $colors: (
@@ -39,4 +42,6 @@ $colors: (
     "bgColorOffer": $bgColorOffer,
     "bgColorOfferCard": $bgColorOfferCard,
     "bgColorDanger": $bgColorDanger,
+    "colorWords1e": $colorWords1e,
+    "bgIcons": $bgIcons,
 )!default;

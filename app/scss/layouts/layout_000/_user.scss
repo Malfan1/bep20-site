@@ -6,6 +6,7 @@
     padding: 60px 27px 48px;
     background: var(--#{$prefix}bg-color-offer);
     text-align: center;
+    margin-bottom: 48px;
 
     &__title{
         @include titleStyle(700, 36px, 48px);
