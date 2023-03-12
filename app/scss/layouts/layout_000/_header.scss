@@ -2,6 +2,10 @@
     display: flex;
     padding: 51px 29px 0 32px;
     margin-bottom: 48px;
+
+    &__nav{
+        display: none;
+    }
 }
 
 .logo{

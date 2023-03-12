@@ -11,9 +11,11 @@ $bgColor: #1E252B;
 $colorTitle: #F9F9F9;
 $colorLinkOnBtn: #F9F9F9;
 $colorOnBtnBorder: #F9F9F9;
+$colorHeaderNav: #F9F9F9;
 $colorSubTitle: #ADB0B6;
 $bgColorButton: #F7A501;
 $colorSpan: #F7A501;
+$colorActive: #F7A501;
 $bgColorDanger:  rgba(247, 165, 1, 0.05);
 $bgColorBox: #2C353D;
 $colorWordsWhoBox: #ADB0B6;
@@ -44,4 +46,6 @@ $colors: (
     "bgColorDanger": $bgColorDanger,
     "colorWords1e": $colorWords1e,
     "bgIcons": $bgIcons,
+    "colorHeaderNav": $colorHeaderNav,
+    "colorActive": $colorActive,
 )!default;
