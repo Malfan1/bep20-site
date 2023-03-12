@@ -1,3 +1,7 @@
+.footer{
+    margin: 0 16px;
+}
+
 .top{
     display: flex;
     flex-direction: column;
@@ -9,6 +13,7 @@
 
     &__icons{
         display: flex;
+        margin-bottom: 42px;
     }
 
     &__icon{
@@ -26,7 +31,76 @@
         }
     }
 
-    &__icon-i{
-        
+
+}
+
+.nav{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+   margin-bottom: 20px;
+    
+    &__title{
+        @include titleStyle(700, 16px, 24px);
+        margin-bottom: 20px;
+    }
+    
+    &-box{
+        margin-bottom: 32px;
+
+        &:nth-child(3){
+            margin-bottom: 42px;
+        }
+
+        &:nth-child(4){
+            margin-bottom: 42px;
+        }
+    }
+    
+    &__li{
+        margin-bottom: 14px;
+    }
+    
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--#{$prefix}white);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 1px;
+        background: var(--#{$prefix}white);
+        opacity: .1;
+        display: block;
     }
 }
+
+.bottom{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--#{$prefix}white);
+    margin-bottom: 31px;
+
+    &__first{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__words{
+        margin-right: 30px;
+        margin-bottom: 32px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__bep{
+        text-align: center;
+    }
+}
+
