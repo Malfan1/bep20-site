@@ -1,0 +1,32 @@
+.who {
+    display: flex;
+    padding: 70px 100px;
+    margin: 0;
+    margin-bottom: 130px;
+    &-box{
+        
+        &_first{
+            margin: 0 98px 0 0;
+        }
+
+        &_second{
+            margin: 0 0 0 98px;
+        }
+
+        &__svg{
+            margin-top: 0;
+        }
+
+        &__p{
+            margin-bottom: 40px;
+        }
+
+        &:not(:last-child):after{
+            content: "";
+            width: 4px;
+            height: calc(100% - (83px * 2));
+            left: 50%;
+            margin: 83px 0; 
+        }
+    }
+}

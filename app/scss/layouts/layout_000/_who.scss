@@ -1,12 +1,13 @@
 .who {
+    position: relative;
     background: var(--#{$prefix}bg-color-b);
     padding: 40px 32px;
     border-radius: 24px;
     margin: 0 12px;
     overflow: hidden;
     margin-bottom: 48px;
+    
     &-box{
-        position: relative;
         
         & > *{
             margin-bottom: 24px;
@@ -34,10 +35,6 @@
         
         &__svg{
             margin-top: 48px;
-            
-            &_m0{
-                margin: 0;
-            }
         }
         
         &__title{
@@ -67,6 +64,8 @@
         }
         
         &__link{
+            font-weight: 600;
+            font-size: 16px;
             color: var(--#{$prefix}color-link-on-btn);
         }
         

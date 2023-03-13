@@ -1,0 +1,35 @@
+.winner {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+   
+   &__flex{
+        order: 2;
+   }
+
+   
+   &__title{
+       margin-bottom: 30px;
+       font-weight: 700;
+       font-size: 48px;
+       line-height: 72px;
+    }
+    
+    &__p{
+        padding-right: 75px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+   &__svg{
+        display: block;
+        margin-right: 70px;
+   }
+
+   &__bit{
+        width: 600px;
+        height: 600px;
+   }
+}
