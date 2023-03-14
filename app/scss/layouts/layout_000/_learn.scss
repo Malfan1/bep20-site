@@ -40,6 +40,11 @@
         justify-content: center;
     }
 
+    &__ui{
+        width: 300px;
+        height: 300px;
+    }
+
     &__gradient-inside{
         position: absolute;
         bottom: 0;

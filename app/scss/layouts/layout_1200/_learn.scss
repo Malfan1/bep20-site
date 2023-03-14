@@ -1,23 +1,41 @@
 .learn{
+    padding: 0;
     &-flex{
         display: flex;
-        padding: 125px 0 127px 0;
+        // padding: 125px 0 127px 0;
+        margin: auto;
+    }
+
+    &__foto{
+        margin: 0;
     }
     
     &__flex-element{
         order: 2;
         padding: 8px 50px 0 0;
     }
+
+    &__svg{
+        min-width: 592px;
+        min-height: 423px;
+        display: block;
+        margin-right: 80px;
+    }
     
     &__ui{
-        width: 592px;
-        height: 423px;
-        // margin-right: 142px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
         align-items: flex-start;
+        justify-content: flex-start
     }
 
     &__title{
         @include titleStyle(700, 48px, 72px);
+
+        &_lh60px{
+        @include titleStyle(700, 48px, 60px);
+        }
     }
 
     &__sub{
@@ -26,6 +44,16 @@
 
     &__words{
         @include wordsStyle(500, 16px, 28px);
+
+        &_p20px{
+            padding-right: 20px;
+        }
+    }
+
+    &__gamepad{
+        width: 350px;
+        height: 350px;
+        margin: 0;
     }
 }
 
@@ -35,4 +63,10 @@
 
 .m16px{
     margin-bottom: 16px;
+}
+
+.order1{
+    order: -1;
+    padding: 0;
+    width: 450px;
 }
