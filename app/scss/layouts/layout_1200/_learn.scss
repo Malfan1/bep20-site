@@ -1,0 +1,38 @@
+.learn{
+    &-flex{
+        display: flex;
+        padding: 125px 0 127px 0;
+    }
+    
+    &__flex-element{
+        order: 2;
+        padding: 8px 50px 0 0;
+    }
+    
+    &__ui{
+        width: 592px;
+        height: 423px;
+        // margin-right: 142px;
+        align-items: flex-start;
+    }
+
+    &__title{
+        @include titleStyle(700, 48px, 72px);
+    }
+
+    &__sub{
+        @include subStyle(600, 18px, 30px);
+    }
+
+    &__words{
+        @include wordsStyle(500, 16px, 28px);
+    }
+}
+
+.m32px16px{
+    margin: 0 32px 24px;
+}
+
+.m16px{
+    margin-bottom: 16px;
+}

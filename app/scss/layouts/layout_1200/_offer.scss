@@ -1,0 +1,28 @@
+.offer{
+    padding: 80px 0 124px 0;
+
+    &__flex-top{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__title{
+        @include titleStyle(700, 48px, 72px);
+        margin-bottom: 20px;
+    }
+
+    &__sub{
+        @include wordsStyle(500, 16px, 26px);
+        margin-bottom: 80px;
+    }
+
+    &__flex{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+        gap: 20px;
+    }
+}
