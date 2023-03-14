@@ -1,9 +1,10 @@
 .learn{
-    padding: 0;
+    padding: 125px 0 127px 0;
+
     &-flex{
         display: flex;
-        // padding: 125px 0 127px 0;
         margin: auto;
+        justify-content: space-around;
     }
 
     &__foto{
@@ -25,23 +26,25 @@
     &__ui{
         width: 100%;
         height: 100%;
-        background-size: cover;
-        align-items: flex-start;
-        justify-content: flex-start
     }
 
     &__title{
         @include titleStyle(700, 48px, 72px);
 
         &_lh60px{
-        @include titleStyle(700, 48px, 60px);
+            @include titleStyle(700, 48px, 60px);
+            margin-bottom: 24px;
+        }
+
+        &-h3{
+            @include styleH3(600, 26px, 39px);
         }
     }
-
+    
     &__sub{
         @include subStyle(600, 18px, 30px);
     }
-
+    
     &__words{
         @include wordsStyle(500, 16px, 28px);
 
@@ -49,24 +52,46 @@
             padding-right: 20px;
         }
     }
-
+    
     &__gamepad{
         width: 350px;
         height: 350px;
+        margin: 0;
+        
+        &-svg{
+            justify-content: flex-start;
+        }
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__card{
+        padding: 40px 40px;
         margin: 0;
     }
 }
 
 .m32px16px{
-    margin: 0 32px 24px;
+    margin: 0;
+    margin-bottom: 65px;
 }
 
 .m16px{
-    margin-bottom: 16px;
+    @include styleH3(700, 20px, 30px);
+    margin-bottom: 20px;
 }
 
 .order1{
     order: -1;
     padding: 0;
     width: 450px;
+    margin-bottom: 41px;
+}
+
+.w1200px{
+    @include wordsStyle(500, 14px, 24px);
 }

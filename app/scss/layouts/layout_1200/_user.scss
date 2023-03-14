@@ -1,0 +1,37 @@
+.user{
+   &__title{
+    @include titleStyle(700, 48px, 72px);
+    margin-bottom: 20px;
+   }
+
+   &__words{
+    @include wordsStyle(500, 16px, 26px);
+    margin-bottom: 100px;
+   }
+
+   &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+   }
+
+   &__box{
+    margin: 0;
+    margin-right: 30px;
+    width: 360px;
+
+    &:nth-child(3){
+        margin: 0;
+    }
+   }
+
+   &__p{
+    padding: 120px 50px 62px;
+    }
+
+    &__yellow-box{
+        width: 1000px;
+        padding: 30px 40px;
+    }
+
+}
