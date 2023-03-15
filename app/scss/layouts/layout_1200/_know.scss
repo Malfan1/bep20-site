@@ -1,0 +1,13 @@
+.know{
+    padding: 65px 0;
+    margin-bottom: 100px;
+    &__title{
+        @include titleStyle(800, 36px, 44px);
+        margin-bottom: 14px;
+    }
+
+    &__words{
+        @include wordsStyle(500, 18px, 21px);
+        margin-bottom: 40px;
+    }
+}

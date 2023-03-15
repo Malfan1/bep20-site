@@ -1,5 +1,20 @@
 .footer{
     margin: 0 16px;
+
+    &__flex{
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 1px;
+            background: var(--#{$prefix}white);
+            opacity: .1;
+            margin-bottom: 20px;
+        } 
+    }
 }
 
 .top{
@@ -35,10 +50,9 @@
 }
 
 .nav{
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     
     &__title{
         @include titleStyle(700, 16px, 24px);
@@ -67,17 +81,6 @@
         line-height: 17px;
         color: var(--#{$prefix}white);
     }
-
-    &::after{
-        content: "";
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        height: 1px;
-        background: var(--#{$prefix}white);
-        opacity: .1;
-        display: block;
-    }
 }
 
 .bottom{
@@ -103,4 +106,3 @@
         text-align: center;
     }
 }
-

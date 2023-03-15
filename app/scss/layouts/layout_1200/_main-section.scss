@@ -37,8 +37,10 @@
 }
 
 .sub-title{
+   text-align: left;
     &__p{
        @include wordsStyle(500, 18px, 30px);
+       padding-right: 60px;
     }
 }
 
