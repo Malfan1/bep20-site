@@ -3,6 +3,7 @@
 
     &__flex{
         position: relative;
+        padding: 39px 0 48px 0;
 
         &::after{
             content: "";
@@ -12,7 +13,16 @@
             height: 1px;
             background: var(--#{$prefix}white);
             opacity: .1;
-            margin-bottom: 20px;
+        } 
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: 1px;
+            background: var(--#{$prefix}white);
+            opacity: .1;
         } 
     }
 }
@@ -87,7 +97,7 @@
     font-weight: 500;
     font-size: 12px;
     color: var(--#{$prefix}white);
-    margin-bottom: 31px;
+    padding: 20px 0 30px 0;
 
     &__first{
         display: flex;
