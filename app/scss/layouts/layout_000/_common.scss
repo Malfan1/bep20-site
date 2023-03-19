@@ -1,0 +1,118 @@
+.common{
+    background: var(--#{$prefix}bg-color-offer);
+    width: 100%;
+    margin-bottom: 48px;
+    &-wrapper{
+        margin: 0px 32px;
+    }
+    
+    &__title{
+        @include titleStyle(700, 32px, 46px); 
+        margin-bottom: 24px;
+    }
+
+    &__words{
+        @include wordsStyle(500, 14px, 24px);
+        margin-bottom: 32px;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card{
+        padding: 52px 47px;
+        margin: 0 13px 24px;
+        background: var(--#{$prefix}bg-color-b);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+
+        &_first{
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 384px;
+                height: 384px;
+                top: -300px;
+                left: -147px;
+                background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+                mix-blend-mode: overlay;
+                opacity: 0.6;
+                filter: blur(139.13px);
+            }
+        }
+
+        &_second{
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 560px;
+                height: 560px;
+                background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+                mix-blend-mode: overlay;
+                opacity: 0.6;
+                filter: blur(139.13px);
+            }
+        }
+
+        &_third{
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 328px;
+                height: 328px;
+                top: -260px;
+                left: 57px;
+                background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+                mix-blend-mode: overlay;
+                opacity: 0.6;
+                filter: blur(139.13px);
+            }
+        }
+
+        &_fourth{
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 560px;
+                height: 560px;
+                top: 320px;
+                left: -69px;
+                background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+                mix-blend-mode: overlay;
+                opacity: 0.6;
+                filter: blur(139.13px);
+            }
+        }
+
+        &:last-of-type{
+            margin-bottom: 64px;
+        }
+    }
+
+    &__png{
+        margin-bottom: 22px;
+    }
+
+    &__h3{
+        margin-bottom: 14px;
+        @include styleH3(700, 18px, 27px);
+    }
+
+    &__sub{
+        @include subStyle(500, 14px, 22px);
+    }
+}

@@ -1,0 +1,36 @@
+.unique{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 32px 64px;
+
+    &__title{
+        @include titleStyle(600, 36px, 54px);
+        margin-bottom: 24px;
+    }   
+
+    &__words{
+        @include wordsStyle(600, 14px, 24px);
+        margin-bottom: 63px;
+    }
+
+    &__foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 375px;
+            height: 375px;
+            background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+            mix-blend-mode: overlay;
+            opacity: 0.6;
+            filter: blur(139.13px);
+        }
+    }
+}

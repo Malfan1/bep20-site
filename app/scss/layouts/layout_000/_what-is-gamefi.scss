@@ -1,0 +1,63 @@
+.what-is-gamefi{
+    margin: 0 32px;
+
+    &__title{
+        @include titleStyle(600, 36px, 54px);
+        margin-bottom: 24px;
+    }
+
+    &__words{
+        @include wordsStyle(400, 14px, 24px);
+        margin-bottom: 15px;
+
+        &_mb32px{
+            margin-bottom: 32px;
+        }
+
+        &:last-of-type{
+            margin-bottom: 32px;
+        }
+    }
+
+    &__foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 32px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 1px;
+            background: var(--#{$prefix}color-link-on-btn);
+            opacity: .2;
+        }
+    }
+
+    &__svg{
+        margin-bottom: 32px;
+    }
+
+    &__sub{
+        @include subStyle(600, 16px, 30px);
+        margin-bottom: 16px;
+    }
+
+    &__btn{
+        background: transparent;
+        outline: none;
+        border: 1px solid $colorOnBtnBorder;
+        border-radius: 16px;
+
+        &-span{
+            display: block;
+            padding: 16px 26px;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--#{$prefix}white);
+        }
+    }
+}
