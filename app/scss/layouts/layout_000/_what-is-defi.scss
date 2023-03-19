@@ -1,0 +1,27 @@
+.what-is-defi{
+    margin: 0 32px 64px;
+
+    &__title{
+        @include titleStyle(600, 36px, 48px);
+        margin-bottom: 24px;
+
+        &_yellow{
+            color: var(--#{$prefix}color-span);
+        }
+    }
+
+    &__words{
+        @include wordsStyle(400, 14px, 24px);
+        margin-bottom: 15px;
+    }
+
+    &__h3{
+        @include styleH3(600, 22px, 36px);
+        margin-bottom: 24px;
+    }
+
+}
+
+.m32px{
+    margin-bottom: 32px;
+}

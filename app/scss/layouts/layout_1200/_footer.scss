@@ -20,9 +20,13 @@
 
 .nav{
     display: flex;
-
+    
     &-box{
         margin-right: 80px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
 }
 
