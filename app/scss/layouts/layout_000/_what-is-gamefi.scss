@@ -19,12 +19,8 @@
         }
     }
 
-    &__foto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__flex{
         position: relative;
-        margin-bottom: 32px;
 
         &::after{
             content: "";
@@ -35,6 +31,13 @@
             background: var(--#{$prefix}color-link-on-btn);
             opacity: .2;
         }
+    }
+
+    &__foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
     }
 
     &__svg{
