@@ -2,7 +2,7 @@
     margin: 0;
     &__flex{
         display: flex;
-        justify-content: space-evenly;
+        // justify-content: space-between;
     }
 
     &__title{
@@ -46,7 +46,7 @@
 
         &_second{
             order: -1;
-            margin-right: 184px;
+            // margin-right: 184px;
         }
     }
 
@@ -56,7 +56,9 @@
         height: 350px;
 
         &_second{
-
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
         }
     }
 
@@ -65,5 +67,20 @@
         margin-bottom: 129px;
         width: 628px;
         margin-right: 178px;
+        // justify-self: flex-start;
+
+        &_second{
+            display: flex;
+            flex-direction: column;
+            width: 480px;
+            align-self: flex-end;
+            margin-left: 178px;
+            margin: 0;
+
+        }
+    }
+
+    &__btn{
+        align-self: flex-start;
     }
 }
