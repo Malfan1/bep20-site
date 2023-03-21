@@ -1,0 +1,36 @@
+.what-is-learn{
+    padding: 0 10px 130px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        @include titleStyle(600, 36px, 48px);
+        margin-bottom: 32px;
+        text-align: center;
+
+        &_yellow{
+            color: var(--#{$prefix}color-span);
+        }
+    }
+
+    &__foto{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 47px;
+    }
+
+    &__svg{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    &__words{
+        padding: 0 22px;
+        @include wordsStyle(400, 14px, 24px);
+        margin-bottom: 15px;
+    }
+}

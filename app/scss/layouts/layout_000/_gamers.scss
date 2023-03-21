@@ -1,0 +1,68 @@
+.gamers{
+    position: relative;
+    background: var(--#{$prefix}bg-color-b);
+    margin: 0 12px;
+    border-radius: 24px;
+    padding: 30px 30px 42px;
+    margin-bottom: 64px;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-bg-under{
+        position: absolute;
+        margin: 0 12px;
+        width: calc(100% - 24px);
+        bottom: -13px;
+        left: 0;
+        height: 100px;
+        background: #3c454d;
+        border-radius: 48px;
+    }
+
+    &__title{
+        @include titleStyle(600, 32px, 48px);
+        margin-bottom: 24px;
+        align-self: flex-start;
+    }
+
+    &__words{
+        @include wordsStyle(500, 14px, 24px);
+        margin-bottom: 32px;
+    }
+
+    &__foto{
+        width: 100%;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__svg{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    &__ul{
+      margin-left: 60px;
+    }
+
+    &__li{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background: url("../../../images/pay.svg") no-repeat;
+            width: 38px;
+            height: 38px;
+            left: -61px;
+        }
+    }
+
+    &__h3{
+        @include styleH3(600, 20px, 24px);
+    }
+}
