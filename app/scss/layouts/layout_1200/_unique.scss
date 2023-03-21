@@ -1,0 +1,24 @@
+.unique{
+    padding: 145px 0;
+    flex-direction: row;
+
+    &__flex-item{
+        align-self: center;
+        // margin-top: 209px;
+        margin-right: 165px;
+    }
+
+    &__title{
+        @include titleStyle(600, 48px, 68px);
+        margin-bottom: 30px;
+    }
+
+    &__words{
+        @include wordsStyle(600, 16px, 26px);
+        width: 430px;
+    }
+
+   &__svg{
+    width: 500px;
+   }
+}

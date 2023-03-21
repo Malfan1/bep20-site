@@ -31,6 +31,11 @@
             background: var(--#{$prefix}color-link-on-btn);
             opacity: .2;
         }
+
+        &:last-of-type::after{
+            content: "";
+            display: none;
+        }
     }
 
     &__foto{
