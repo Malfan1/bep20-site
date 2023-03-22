@@ -1,0 +1,42 @@
+.gamers{
+    position: relative;
+    flex-direction: row;
+    padding: 80px 80px;
+    
+    &__flex-element{
+        // position: absolute;
+        // top: -60px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 130px;
+    }
+
+    &__foto{
+        display: flex;
+        justify-content: flex-start;
+        order: -1;
+        margin-bottom: 40px;
+    }
+    
+    &__svg{
+    }
+
+    &__title{
+        @include titleStyle(600, 48px, 56px);
+        &_mt70px{
+            // margin-top: 170px;
+        }
+    }
+
+    &__words{
+        &_another{
+            width: 450px;
+            @include wordsStyle(500, 16px, 30px);
+        }
+    }
+
+    &__h3{
+
+    }
+
+}

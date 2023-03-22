@@ -26,6 +26,10 @@
     &__svg{
         width: 100%;
         max-width: 500px;
+
+        &_none{
+            display: none;
+        }
     }
 
     &__words{

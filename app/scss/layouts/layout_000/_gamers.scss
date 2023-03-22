@@ -1,16 +1,32 @@
 .gamers{
-    position: relative;
+    // position: relative;
     background: var(--#{$prefix}bg-color-b);
     margin: 0 12px;
     border-radius: 24px;
     padding: 30px 30px 42px;
     margin-bottom: 64px;
     z-index: 2;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &__gradient{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -186px;
+            top: -186px;
+            width: 389px;
+            height: 389px;
+            background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+            mix-blend-mode: overlay;
+            filter: blur(80px);
+        }
+    }
 
     &-bg-under{
         position: absolute;
@@ -47,22 +63,45 @@
     }
 
     &__ul{
-      margin-left: 60px;
+
     }
 
-    &__li{
-        position: relative;
-        &::before{
-            content: "";
-            position: absolute;
-            background: url("../../../images/pay.svg") no-repeat;
-            width: 38px;
-            height: 38px;
-            left: -61px;
+    &__li{  
+        &_first{
+            @include addSvgForLearn(pay);
+            margin-bottom: 40px;
+            margin-left: 60px;
+        }
+
+        &_second{
+            @include addSvgForLearn(bar);
+            margin-bottom: 40px;
+            margin-left: 60px;
+        }
+
+        &_third{
+            @include addSvgForLearn(starr);
+            margin-bottom: 40px;
+            margin-left: 60px;
+        }
+
+        &_fourth{
+            @include addSvgForLearn(check);
+            margin-left: 60px;
         }
     }
 
     &__h3{
         @include styleH3(600, 20px, 24px);
+        margin-bottom: 16px;
+    }
+
+    &__line{
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        background: var(--#{$prefix}color-line);
+        opacity: .15;
+        margin-bottom: 40px;
     }
 }

@@ -1,0 +1,32 @@
+.what-is-learn{
+    padding-top: 120px;
+    padding-bottom: 0;
+
+    &__title{
+        @include titleStyle(600, 72px, 82px);
+        width: 790px;
+    }
+
+    &__foto{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    &__svg{
+        display: none;
+        &_none{
+            display: block;
+            width: 100%;
+            max-width: 1100px;
+        }
+    }
+
+    &__flex-item{
+        display: flex;
+        margin-bottom: 200px;
+    }
+
+    &__words{
+        @include wordsStyle(500, 15px, 30px);
+    }
+}
